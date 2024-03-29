@@ -13,6 +13,9 @@ POST /product: Create a new product.
 GET /product/:id: Retrieve a product by ID.
 PUT /product/:id: Update a product by ID.
 DELETE /product/:id: Delete a product by ID.
+GET /product/status/:status Get products by status
+GET /product/updated-last-24-hours Retrieve a product which updated within 24 hours
+
 
 
 ## Technologies Used
