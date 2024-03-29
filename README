@@ -1,0 +1,21 @@
+## Installation
+git clone https://github.com/suraj1724/Shopping-Portal.git
+cd shopping-portal
+npm install
+
+## PORT=4000/ localhost
+DB_URI=mongodb://localhost:27017/shopping_portal
+
+
+## API Endpoints
+GET /: Retrieve all products.
+POST /product: Create a new product.
+GET /product/:id: Retrieve a product by ID.
+PUT /product/:id: Update a product by ID.
+DELETE /product/:id: Delete a product by ID.
+
+
+## Technologies Used
+Node.js
+Express
+MongoDB
