@@ -6,10 +6,11 @@ const bodyParser = require('body-parser');
 const taskRoutes = require('./routes/taskRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 app.use(bodyParser.json());
-app.use('/tasks', taskRoutes);
+app.use('/', taskRoutes);
+console.log(app, "app is console")
 
 mongoose.connect('mongodb://localhost:27017/shopping_portal', {
   useNewUrlParser: true,
