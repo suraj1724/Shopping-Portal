@@ -8,13 +8,24 @@ DB_URI=mongodb://localhost:27017/shopping_portal
 
 
 ## API Endpoints
-GET /: Retrieve all products.
-POST /product: Create a new product.
-GET /product/:id: Retrieve a product by ID.
-PUT /product/:id: Update a product by ID.
-DELETE /product/:id: Delete a product by ID.
-GET /product/status/:status Get products by status
-GET /product/updated-last-24-hours Retrieve a product which updated within 24 hours
+GET /: Retrieve all products.       http://localhost:4000/
+
+
+POST /product: Create a new product.    http://localhost:4000/product
+                                       JSON DATA:
+                                                { "title": "Mens Cotton Jackets and cloths", "description":"great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day."  }
+
+
+GET /product/:id: Retrieve a product by ID.  http://localhost:4000/product/66068a8158fa6e8eb50971e2
+
+PUT /product/:id: Update a product by ID.     http://localhost:4000/product/66068a8158fa6e8eb50971e2 (edit the values using JSON data format)
+
+DELETE /product/:id: Delete a product by ID.        http://localhost:4000/product/660696e06f97bb2e927e0c36
+
+GET /product/status/:status Get products by status   http://localhost:4000/product/status/pending (pending/completed)
+
+
+GET /product/updated-last-24-hours Retrieve a product which updated within 24 hours   http://localhost:4000/product/updated-last-24-hours
 
 
 

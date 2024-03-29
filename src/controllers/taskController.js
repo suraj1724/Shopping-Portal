@@ -95,11 +95,10 @@ exports.getProductsByStatus = async (req, res) => {
 
 exports.getProductsUpdatedLast24Hours = async (req, res) => {
     try {
-        // Calculate the date 24 hours ago
+       
         const twentyFourHoursAgo = new Date();
         twentyFourHoursAgo.setDate(twentyFourHoursAgo.getDate() - 1);
 
-        // Find products updated within the last 24 hours in the database
         const products = await Task.find({
             $or: [
                 { createdAt: { $gte: twentyFourHoursAgo } },
@@ -107,7 +106,7 @@ exports.getProductsUpdatedLast24Hours = async (req, res) => {
             ]
         });
 
-        res.json(products); // Respond with the products
+        res.json(products);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
