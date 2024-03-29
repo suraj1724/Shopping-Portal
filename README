@@ -12,14 +12,8 @@ GET /: Retrieve all products.       http://localhost:4000/
 DELETE /product/:id: Delete a product by ID. 
 GET    /product/:id: Retrieve a product by ID.  
 GET    /product/updated-last-24-hours Retrieve a product which updated within 24 hours
-
 PUT   /product/:id: Update a product by ID.     http://localhost:4000/product/66068a8158fa6e8eb50971e2 (edit the values using JSON data format)
-
-      
-
 GET /product/status/:status Get products by status   http://localhost:4000/product/status/pending (pending/completed)
-
-
 POST /product: Create a new product.    http://localhost:4000/product
                                        JSON DATA:
                                                 { "title": "Mens Cotton Jackets and cloths", "description":"great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day."  }
