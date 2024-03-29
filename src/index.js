@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000;
 
 app.use(bodyParser.json());
 app.use('/', taskRoutes);
-console.log(app, "app is console")
+
 
 mongoose.connect('mongodb://localhost:27017/shopping_portal', {
   useNewUrlParser: true,
