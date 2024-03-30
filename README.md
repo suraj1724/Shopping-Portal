@@ -6,6 +6,9 @@ npm install
 ## PORT=4000/ localhost
 DB_URI=mongodb://localhost:27017/shopping_portal
 
+## Start the Server
+cd src
+node index.js
 
 ## API Endpoints
 GET /: Retrieve all products.
